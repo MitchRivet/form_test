@@ -4,10 +4,7 @@ import FormContainer from "../containers/FormContainer.js";
 
 class App extends React.Component {
   render() {
-    return (
-        <div>
-    <FormContainer />
-    </div>);
+    return <FormContainer />;
   }
 }
 
