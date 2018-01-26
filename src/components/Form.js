@@ -43,12 +43,11 @@ class Form extends React.Component {
         <form
           style={{ display: "flex", flexDirection: "column" }}
           onSubmit={e => {
-            debugger;
             this.props.submitForm();
             e.preventDefault();
           }}
         >
-          <h1>Nike Form Test</h1>
+          <h1>Form Test</h1>
           <h2>First Name</h2>
           <input
             value={this.props.input.firstName}
@@ -87,9 +86,10 @@ class Form extends React.Component {
           <input
             style={{ marginTop: "32px" }}
             type="submit"
+            id="submitButton"
             value="Submit Form"
           />
-          {this.props.loading && !this.props.isDone && <h1>Loading...</h1>}
+          {this.props.loading && !this.props.isDone && <h1 id="loadMessage">Loading...</h1>}
 
           {!this.props.loading &&
             this.props.isDone && (
