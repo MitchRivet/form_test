@@ -25,7 +25,8 @@ class Form extends React.Component {
       this.setState({ hobbyInput: "" });
     }
   }
-
+  
+  //you can see the inputs are controlled here: https://reactjs.org/docs/forms.html
   render() {
     let hobbies = this.props.input.hobbies.map(h => {
       return <li>{h}</li>;
