@@ -1,13 +1,16 @@
 import React from "react";
 import { render } from "react-dom";
+import { Provider } from "react-redux";
 import FormContainer from "../containers/FormContainer.js";
+import store from "../redux/store";
 
 class App extends React.Component {
   render() {
     return (
-        <div>
-    <FormContainer />
-    </div>);
+      <Provider store={store}>
+        <FormContainer />
+      </Provider>
+    );
   }
 }
 
